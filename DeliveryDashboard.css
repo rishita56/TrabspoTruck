@@ -1,0 +1,153 @@
+/* DeliveryDashboard.css */
+
+.delivery-dashboard {
+    font-family: Arial, sans-serif;
+    color: rgb(23, 21, 21);
+    background-color: #f8ecec;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #161515;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  /* Summary Cards */
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    flex: 1 1 30%;
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(14, 14, 14);
+    text-align: center;
+    font-weight: bold;
+    min-width: 200px;
+  }
+  
+  .assigned {
+    background-color: #f57c00;
+  }
+  
+  .out-for-delivery {
+    background-color: #2196f3;
+  }
+  
+  .delivered {
+    background-color: #4caf50;
+  }
+  
+  /* Table */
+  .parcel-table {
+    margin-bottom: 30px;
+    overflow-x: auto;
+  }
+  
+  .parcel-table table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e1dbdb;
+  }
+  
+  th {
+    background-color: #f9efef;
+  }
+  
+  td {
+    color: #121111;
+  }
+  
+  td select {
+    background-color: #efebeb;
+    color: #070707;
+    border: 1px solid #c0bebe;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Issue Form */
+  .issue-form {
+    background-color: #f0ebeb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .issue-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .issue-form input,
+  .issue-form textarea {
+    background-color: #d2cdcd;
+    color: rgb(235, 228, 228);
+    padding: 10px;
+    border: 1px solid #a4a0a0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+  
+  .issue-form button {
+    background-color: #7886e1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .issue-form button:hover {
+    background-color: #0041e6;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    .summary {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .parcel-table table {
+      min-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    th, td {
+      font-size: 0.95em;
+    }
+  
+    .issue-form button {
+      font-size: 0.95em;
+    }
+  }
+  

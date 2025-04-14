@@ -1,0 +1,191 @@
+/* ReceiverDashboard.css */
+
+.receiver-dashboard {
+  font-family: Arial, sans-serif;
+  color: rgb(15, 14, 14);
+  background-color: #f6ebeb;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #f4eded;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+/* Summary Section */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1 1 30%;
+  padding: 15px;
+  border-radius: 8px;
+  color: rgb(21, 20, 20);
+  text-align: center;
+  font-weight: bold;
+  min-width: 200px;
+}
+
+.in-transit {
+  background-color: #f57c00;
+}
+
+.delivered {
+  background-color: #4caf50;
+}
+
+.delayed {
+  background-color: #f44336;
+}
+
+/* Parcel Table */
+.parcel-table {
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.parcel-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #676565;
+}
+
+th {
+  background-color: #efe9e9;
+}
+
+td {
+  color: #0f0f0f;
+}
+
+td button {
+  background-color: #e8e5e5;
+  color: #131315;
+  border: 1px solid #645cef;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+td button:hover {
+  background-color: #928ef3;
+  color: white;
+}
+
+/* Notifications */
+.notifications {
+  background-color: #a19f9f;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.notifications ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.notifications li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* Help Section */
+.help-section {
+  background-color: #f7f0f0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.help-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.help-section input,
+.help-section textarea {
+  background-color: #e5dfdf;
+  color: rgb(9, 9, 9);
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.help-section button {
+  background-color: #8579f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.help-section button:hover {
+  background-color: #4919e6;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .summary {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .parcel-table table {
+    min-width: 100%;
+  }
+
+  .help-section input,
+  .help-section textarea {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  td button {
+    padding: 5px 8px;
+    font-size: 0.9em;
+  }
+
+  .notifications li {
+    font-size: 1em;
+  }
+
+  .help-section button {
+    font-size: 0.95em;
+  }
+}

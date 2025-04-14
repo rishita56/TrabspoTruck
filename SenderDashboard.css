@@ -1,0 +1,140 @@
+.sender-dashboard {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .sender-dashboard h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .stats-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    min-width: 200px;
+    flex: 1;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  /* Recent Parcels */
+  .recent-parcels {
+    margin-bottom: 3rem;
+  }
+  
+  .recent-parcels h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .recent-parcels table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .recent-parcels th, .recent-parcels td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .recent-parcels th {
+    background-color: #7886e1;
+    color: #1a1a1a;
+  }
+  
+  .recent-parcels td button {
+    padding: 0.5rem 1rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .recent-parcels td button:hover {
+    background-color: #0041e6;
+    color: #1a1a1a;
+  }
+  
+  /* Send Parcel Form */
+  .send-parcel {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .send-parcel h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .send-parcel form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .send-parcel input,
+  .send-parcel select {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .send-parcel button {
+    padding: 0.75rem 1.2rem;
+    background-color: #7b89e4;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-parcel button:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .stats-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .recent-parcels table,
+    .recent-parcels th,
+    .recent-parcels td {
+      font-size: 0.9rem;
+    }
+  }
+  
