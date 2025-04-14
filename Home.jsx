@@ -11,25 +11,25 @@ const Home = () => {
           <div className="logo">TranspoTruck</div>
           <ul className="nav-links">
             <li>Home</li>
-            <li><Link tp="/aboutus">About</Link></li>
+            <li><Link to="/about">About</Link></li>
             <li className="dropdown">
-              Services ⬇
+              <span className="dropdown-toggle">Services ⬇</span>
               <ul className="dropdown-content">
-                <li>Send Parcel</li>
-                <li>Track Parcel</li>
-                <li>Vehicle Hiring</li>
+                <li><Link to="/sender">Send Parcel</Link></li>
+                <li><Link to="/track">Track Parcel</Link></li>
+                <li><Link to="/hire">Vehicle Hiring</Link></li>
               </ul>
             </li>
             <li className="dropdown">
-              User Modules ⬇
+              <span className="dropdown-toggle">User Modules ⬇</span>
               <ul className="dropdown-content">
-                <li>Sender Dashboard</li>
-                <li>Receiver Dashboard</li>
-                <li>Delivery Personnel</li>
+                <li><Link to="/sender-dashboard">Sender Dashboard</Link></li>
+                <li><Link to="/reciever-dashboard">Receiver Dashboard</Link></li>
+                <li><Link to="/delivery-personnel">Delivery Personnel</Link></li>
               </ul>
             </li>
-            <li>Contact</li>
-            <li>Login/Signup</li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/login">Login/Signup</Link></li>
           </ul>
         </nav>
 

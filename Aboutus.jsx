@@ -1,4 +1,4 @@
-// AboutUs.jsx
+
 import React from 'react';
 import img1 from './assets/scooter-1027345_1280.jpg';
 import img2 from './assets/scooter-1027347_1280.jpg';
@@ -8,11 +8,11 @@ import './Aboutus.css';
 
 const AboutUs = () => {
   return (
-    <div className="aboutus-container">
-      <h1 className="aboutus-heading">About us</h1>
+    <div className="about-container">
+      <h1 className="about-heading">About us</h1>
 
-      <div className="info-section">
-        <div className="info-box">
+      <div className="about-cards">
+        <div className="about-card">
           <h2>Who are we</h2>
           <p>
             TranspoTruck is a modern transportation and logistics platform designed to make
@@ -21,7 +21,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="info-box">
+        <div className="about-card">
           <h2>Our Vision</h2>
           <p>
             To become a trusted logistics partner that bridges the gap between senders, receivers,
@@ -29,7 +29,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="info-box">
+        <div className="about-card">
           <h2>Our Mission</h2>
           <p>
             To redefine the logistics experience by making it accessible, reliable, and tech-driven —
@@ -38,10 +38,10 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="image-section">
-        <img src={img1} alt="Delivery on scooter" />
-        <img src={img2} alt="Fast delivery vehicle" />
-        <img src={img3} alt="Secure package delivery" />
+      <div className="about-images">
+      <div className="image-box"><img src={img1} alt="Delivery on scooter" /></div>
+      <div className="image-box"><img src={img2} alt="Fast delivery vehicle" /></div>
+      <div className="image-box"><img src={img3} alt="Secure package delivery" /></div>
       </div>
     </div>
   );
